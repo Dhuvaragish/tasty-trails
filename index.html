@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Trails | Delicious Food, Delivered Fresh</title>
+  <meta name="description" content="Tasty Trails - Every Bite Begins a Beautiful Journey. Discover delicious flavours, freshly prepared meals, and unforgettable dining in Coimbatore, Tamil Nadu.">
+
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Tasty Trails Home">
+        <span class="logo-icon-box">
+          <!-- Fork and Knife Icon (Matching official brand badge) -->
+          <svg class="logo-svg" viewBox="0 0 55 55" fill="none" aria-hidden="true">
+            <g fill="currentColor">
+              <path d="M16 16.5C16 15.7 16.7 15 17.5 15S19 15.7 19 16.5V23.5H16V16.5Z"/>
+              <path d="M21 16.5C21 15.7 21.7 15 22.5 15S24 15.7 24 16.5V23.5H21V16.5Z"/>
+              <path d="M26 16.5C26 15.7 26.7 15 27.5 15S29 15.7 29 16.5V23.5H26V16.5Z"/>
+              <path d="M16 23H29C29 27.2 26.5 28.8 23.7 29.5V39C23.7 39.8 23 40.5 22.5 40.5C21.9 40.5 21.3 39.8 21.3 39V29.5C18.5 28.8 16 27.2 16 23Z"/>
+              <path d="M37.5 15.5C37.3 15.5 37.1 15.7 37 16C35.2 18.2 32.5 21.8 32.5 25.5C32.5 27.5 33.2 28.8 34 29.3V39C34 39.8 34.7 40.5 35.5 40.5C36.3 40.5 37 39.8 37 39V29.5H37.5V15.5Z"/>
+            </g>
+          </svg>
+        </span>
+        <div class="logo-text-group">
+          <span class="brand-name">Tasty Trails</span>
+          <span class="brand-sub">Fine Dining & Bistro</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle (Checkbox Hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation Menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <!-- Navigation Links and Action Button -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#menu" class="btn btn-nav">Explore Menu</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="sparkle-icon">✦</span>
+          <span>Every Bite Begins a Beautiful Journey</span>
+          <span class="sparkle-icon">✦</span>
+        </div>
+        <h1 class="hero-title">Delicious Food, <br><span class="hero-title-accent">Delivered Fresh</span></h1>
+        <p class="hero-desc">
+          Discover delicious flavours, freshly prepared meals, and unforgettable dining experiences. Every dish is made with passion and served with love.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-hero">Explore Menu</a>
+          <a href="#contact" class="btn btn-hero-secondary">Book a Table</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+        <span class="scroll-arrow">↓</span>
+      </a>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Chef's Selection</span>
+          <h2 class="section-title">Our Special Menu</h2>
+          <div class="title-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">🍴</span>
+            <span class="divider-line"></span>
+          </div>
+          <p class="section-subtitle">Fresh ingredients, delicious flavours, and meals made with love.</p>
+        </div>
+
+        <!-- 6 Food Cards Grid -->
+        <div class="menu-grid">
+          <!-- Card 1: Classic Burger -->
+          <article class="food-card">
+            <div class="food-image-wrapper">
+              <img src="images/burger.jpg" alt="Juicy Classic Cheeseburger with fresh lettuce and sauce" class="food-img" loading="lazy">
+              <span class="food-badge">Bestseller</span>
+            </div>
+            <div class="food-info">
+              <div class="food-headline">
+                <h3 class="food-title">Classic Burger</h3>
+                <span class="food-price">₹199</span>
+              </div>
+              <p class="food-description">
+                Juicy grilled patty with fresh lettuce, cheese, and signature sauce.
+              </p>
+              <div class="food-card-footer">
+                <a href="#contact" class="btn btn-order">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Margherita Pizza -->
+          <article class="food-card">
+            <div class="food-image-wrapper">
+              <img src="images/pizza.jpg" alt="Freshly baked Margherita Pizza with mozzarella and basil" class="food-img" loading="lazy">
+              <span class="food-badge">Chef's Choice</span>
+            </div>
+            <div class="food-info">
+              <div class="food-headline">
+                <h3 class="food-title">Margherita Pizza</h3>
+                <span class="food-price">₹299</span>
+              </div>
+              <p class="food-description">
+                Classic Italian pizza topped with mozzarella, fresh basil, and tomato sauce.
+              </p>
+              <div class="food-card-footer">
+                <a href="#contact" class="btn btn-order">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Creamy Pasta -->
+          <article class="food-card">
+            <div class="food-image-wrapper">
+              <img src="images/pasta.jpg" alt="Rich creamy white sauce pasta with herbs and parmesan" class="food-img" loading="lazy">
+              <span class="food-badge">Special</span>
+            </div>
+            <div class="food-info">
+              <div class="food-headline">
+                <h3 class="food-title">Creamy Pasta</h3>
+                <span class="food-price">₹249</span>
+              </div>
+              <p class="food-description">
+                Delicious creamy pasta prepared with herbs and parmesan.
+              </p>
+              <div class="food-card-footer">
+                <a href="#contact" class="btn btn-order">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Chicken Biryani -->
+          <article class="food-card">
+            <div class="food-image-wrapper">
+              <img src="images/biryani.jpg" alt="Traditional aromatic royal chicken biryani" class="food-img" loading="lazy">
+              <span class="food-badge">Must Try</span>
+            </div>
+            <div class="food-info">
+              <div class="food-headline">
+                <h3 class="food-title">Chicken Biryani</h3>
+                <span class="food-price">₹279</span>
+              </div>
+              <p class="food-description">
+                Aromatic basmati rice cooked with tender chicken and authentic spices.
+              </p>
+              <div class="food-card-footer">
+                <a href="#contact" class="btn btn-order">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Crispy French Fries -->
+          <article class="food-card">
+            <div class="food-image-wrapper">
+              <img src="images/fries.jpg" alt="Golden crispy seasoned french fries" class="food-img" loading="lazy">
+              <span class="food-badge">Crunchy</span>
+            </div>
+            <div class="food-info">
+              <div class="food-headline">
+                <h3 class="food-title">Crispy French Fries</h3>
+                <span class="food-price">₹99</span>
+              </div>
+              <p class="food-description">
+                Freshly prepared crispy fries with special seasoning.
+              </p>
+              <div class="food-card-footer">
+                <a href="#contact" class="btn btn-order">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Chocolate Dessert -->
+          <article class="food-card">
+            <div class="food-image-wrapper">
+              <img src="images/dessert.jpg" alt="Decadent warm chocolate molten dessert" class="food-img" loading="lazy">
+              <span class="food-badge">Sweet Delight</span>
+            </div>
+            <div class="food-info">
+              <div class="food-headline">
+                <h3 class="food-title">Chocolate Dessert</h3>
+                <span class="food-price">₹149</span>
+              </div>
+              <p class="food-description">
+                Rich chocolate dessert for a perfect sweet ending.
+              </p>
+              <div class="food-card-footer">
+                <a href="#contact" class="btn btn-order">Order Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <!-- Left Column: Restaurant / Chef Image -->
+          <div class="about-image-column">
+            <div class="about-image-card">
+              <img src="images/about.jpg" alt="Tasty Trails master chef preparing artisanal gourmet dishes" class="about-img" loading="lazy">
+              <div class="about-experience-badge">
+                <span class="exp-years">10+</span>
+                <span class="exp-text">Years of Culinary Craft</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: About Description & Highlights -->
+          <div class="about-content-column">
+            <span class="section-tag">Our Story</span>
+            <h2 class="about-title">A Taste of Happiness in Every Bite</h2>
+            <p class="about-description">
+              Welcome to Tasty Trails, where great food brings people together. We believe every meal should be a memorable experience. Our team focuses on fresh ingredients, delicious recipes, and quality service to make every dining experience special.
+            </p>
+
+            <!-- Three Highlights -->
+            <div class="highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon-box">
+                  <!-- Sprout / Fresh Leaf Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="highlight-svg" aria-hidden="true">
+                    <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/>
+                    <path d="M12 6c-3 0-5 2-5 5 0 4 5 7 5 7s5-3 5-7c0-3-2-5-5-5z"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4 class="highlight-title">Fresh Ingredients</h4>
+                  <p class="highlight-detail">Sourced daily from trusted local farms for unmatched wholesome purity.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon-box">
+                  <!-- Chef Hat Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="highlight-svg" aria-hidden="true">
+                    <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6v-7.13z"/>
+                    <line x1="6" y1="17" x2="18" y2="17"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4 class="highlight-title">Expert Chefs</h4>
+                  <p class="highlight-detail">Artisanal culinary masters crafting memorable recipes with meticulous care.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon-box">
+                  <!-- Quality & Taste Star / Trophy Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="highlight-svg" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <div class="highlight-text">
+                  <h4 class="highlight-title">Quality & Taste</h4>
+                  <p class="highlight-detail">Consistent gold-standard flavors that keep patrons coming back for more.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Reach Out</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">✉</span>
+            <span class="divider-line"></span>
+          </div>
+          <p class="section-subtitle">Have a question or want to know more about our food? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Information -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Visit or Call Us</h3>
+            <p class="contact-info-intro">
+              Whether you are planning a family dinner, hosting a celebration, or have inquiries regarding our menu, our warm team is ready to serve you.
+            </p>
+
+            <ul class="contact-details-list">
+              <li class="contact-detail-item">
+                <div class="contact-icon-bubble">
+                  <!-- Location Pin SVG -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="detail-label">Restaurant Location</span>
+                  <span class="detail-val">Coimbatore, Tamil Nadu, India</span>
+                </div>
+              </li>
+
+              <li class="contact-detail-item">
+                <div class="contact-icon-bubble">
+                  <!-- Phone SVG -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="detail-label">Direct Phone Line</span>
+                  <a href="tel:+919876543210" class="detail-link">+91 98765 43210</a>
+                </div>
+              </li>
+
+              <li class="contact-detail-item">
+                <div class="contact-icon-bubble">
+                  <!-- Mail SVG -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-svg" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="detail-label">Email Inquiries</span>
+                  <a href="mailto:hello@tastytrails.com" class="detail-link">hello@tastytrails.com</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="dining-hours-box">
+              <span class="hours-title">🕒 Opening Hours</span>
+              <p class="hours-desc">Monday – Sunday: 11:00 AM – 11:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Message</h3>
+            <form action="#contact" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name <span class="required-asterisk">*</span></label>
+                <input 
+                  type="text" 
+                  id="full-name" 
+                  name="full-name" 
+                  class="form-input" 
+                  placeholder="e.g. John Doe" 
+                  required 
+                  autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required-asterisk">*</span></label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="e.g. john@example.com" 
+                  required 
+                  autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required-asterisk">*</span></label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  class="form-textarea" 
+                  placeholder="Tell us about your table reservation, dietary preferences, or feedback..." 
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">Submit Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">
+              <!-- Fork & Knife SVG (Matching official brand badge) -->
+              <svg viewBox="0 0 55 55" fill="none" class="footer-logo-svg" aria-hidden="true">
+                <g fill="currentColor">
+                  <path d="M16 16.5C16 15.7 16.7 15 17.5 15S19 15.7 19 16.5V23.5H16V16.5Z"/>
+                  <path d="M21 16.5C21 15.7 21.7 15 22.5 15S24 15.7 24 16.5V23.5H21V16.5Z"/>
+                  <path d="M26 16.5C26 15.7 26.7 15 27.5 15S29 15.7 29 16.5V23.5H26V16.5Z"/>
+                  <path d="M16 23H29C29 27.2 26.5 28.8 23.7 29.5V39C23.7 39.8 23 40.5 22.5 40.5C21.9 40.5 21.3 39.8 21.3 39V29.5C18.5 28.8 16 27.2 16 23Z"/>
+                  <path d="M37.5 15.5C37.3 15.5 37.1 15.7 37 16C35.2 18.2 32.5 21.8 32.5 25.5C32.5 27.5 33.2 28.8 34 29.3V39C34 39.8 34.7 40.5 35.5 40.5C36.3 40.5 37 39.8 37 39V29.5H37.5V15.5Z"/>
+                </g>
+              </svg>
+            </span>
+            <span class="footer-brand-title">Tasty Trails</span>
+          </div>
+          <p class="footer-tagline">"Every Bite Begins a Beautiful Journey."</p>
+          <p class="footer-mission">
+            Serving handcrafted culinary experiences with authentic spices, fresh local ingredients, and heartfelt hospitality.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Information</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <span class="footer-info-icon">📍</span>
+              <span>Coimbatore, Tamil Nadu</span>
+            </li>
+            <li>
+              <span class="footer-info-icon">📞</span>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <span class="footer-info-icon">✉️</span>
+              <a href="mailto:hello@tastytrails.com">hello@tastytrails.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Social Media -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Follow Our Journey</h4>
+          <p class="footer-social-intro">Stay updated with our daily specials, seasonal recipes, and behind-the-scenes stories.</p>
+          <div class="social-links-group">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Visit Tasty Trails on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Visit Tasty Trails on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Visit Tasty Trails on YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Tasty Trails. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
